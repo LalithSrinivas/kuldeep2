@@ -17,6 +17,9 @@ sources:
   schema: "orch_test"
   tables:
   - name: "create_point_gem_seed"
+    config:
+      tags:
+      - "pipeline:latlog_test2"
     quoting:
       identifier: true
     columns:
@@ -61,6 +64,9 @@ sources:
   schema: "qa_database"
   tables:
   - name: "ashtest"
+    config:
+      tags:
+      - "pipeline:latlog_test2"
     columns:
     - name: "Series_reference"
       dataType:

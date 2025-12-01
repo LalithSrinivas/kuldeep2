@@ -76,12 +76,6 @@ with DAG(Schedule = Schedule):
         component = "Model", 
         modelName = "latlog_test2__single_point_1"
     )
-    seedtest2 = Task(
-        task_id = "seedtest2", 
-        component = "Dataset", 
-        table = {"name" : "seedtest2", "sourceType" : "Seed"}, 
-        writeOptions = {"writeMode" : "overwrite"}
-    )
     latlog_test2__single_point_1_1 = Task(
         task_id = "latlog_test2__single_point_1_1", 
         component = "Model", 
@@ -176,7 +170,6 @@ with DAG(Schedule = Schedule):
         modelName = "latlog_test2__create_point_1_1"
     )
     test_new_seed_with_date.out >> latlog_test2__single_point_1_3.in_0
-    dataLatLongPoint_csv_1.out0 >> seedtest2.in0
     test_seed.out >> latlog_test2__single_point_1_1.in_0
     dataLatLong_csv_1.output_port_0 >> latlog_test2__create_point_1_1.in_0
     latlog_test2__create_point_1_1.out_0 >> [city_distance_analysis_csv.in0, latlog_test2__single_point_1_2.in_0]
