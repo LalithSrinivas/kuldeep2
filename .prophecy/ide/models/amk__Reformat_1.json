@@ -1,7 +1,7 @@
 {
-  "id" : "model_amk_Reformat_1",
+  "id" : "amk__Reformat_1",
   "metainfo" : {
-    "label" : "model_amk_Reformat_1",
+    "label" : "amk__Reformat_1",
     "autoLayout" : true,
     "staleState" : "none",
     "sourceSuggestions" : {
@@ -9,22 +9,20 @@
     },
     "graphConfig" : {
       "entityConfig" : {
-        "alias" : "\"prophecy_tmp__mc3c5y15__amk__Reformat_1\"",
-        "materialized" : "table",
-        "database" : "\"sony\"",
-        "schema" : "\"orch_test\"",
+        "materialized" : "ephemeral",
+        "database" : "\"qa_team\"",
+        "schema" : "\"qa_orchestration\"",
         "type" : "ModelConfig"
       }
     },
     "version" : 3
   },
   "processes" : {
-    "prophecy_tmp__mc3c5y15__amk__Reformat_1" : {
-      "id" : "prophecy_tmp__mc3c5y15__amk__Reformat_1",
+    "Reformat_1_u2Rv29xNod53jkNNcXfmw$$HB_4RmwDqC9prWmWvwGJh" : {
+      "id" : "Reformat_1_u2Rv29xNod53jkNNcXfmw$$HB_4RmwDqC9prWmWvwGJh",
       "component" : "TargetModel",
       "metadata" : {
-        "label" : "Reformat_1",
-        "phase" : 0
+        "label" : "Reformat_1"
       },
       "properties" : {
         "customQueryDisabled" : true,
@@ -39,12 +37,12 @@
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "input_port_0_1",
-          "slug" : "input_port_0_1"
+          "id" : "input_port_0",
+          "slug" : "input_port_0"
         } ],
         "outputs" : [ {
-          "id" : "output_port_0_1",
-          "slug" : "output_port_0_1"
+          "id" : "output_port_0",
+          "slug" : "output_port_0"
         } ],
         "isCustomOutputSchema" : false,
         "autoUpdateOnRun" : false
@@ -107,11 +105,11 @@
     }
   },
   "connections" : [ {
-    "id" : "conn_h_tQ5pwLu7fMLLjQtd0NJ$$9TZFTwRIPhUSpiX_5tOSs_prophecy_tmp__mc3c5y15__amk__Reformat_1",
+    "id" : "conn_h_tQ5pwLu7fMLLjQtd0NJ$$9TZFTwRIPhUSpiX_5tOSs_u2Rv29xNod53jkNNcXfmw$$HB_4RmwDqC9prWmWvwGJh_Reformat_1_u2Rv29xNod53jkNNcXfmw$$HB_4RmwDqC9prWmWvwGJh",
     "source" : "h_tQ5pwLu7fMLLjQtd0NJ$$9TZFTwRIPhUSpiX_5tOSs",
     "sourcePort" : "u2Rv29xNod53jkNNcXfmw$$HB_4RmwDqC9prWmWvwGJh",
-    "target" : "prophecy_tmp__mc3c5y15__amk__Reformat_1",
-    "targetPort" : "input_port_0_1"
+    "target" : "Reformat_1_u2Rv29xNod53jkNNcXfmw$$HB_4RmwDqC9prWmWvwGJh",
+    "targetPort" : "input_port_0"
   }, {
     "id" : "eaSi1UJjHJn_BjNFMDMsZ",
     "source" : "z9r2FAcwjjZqJgG6veHMh",

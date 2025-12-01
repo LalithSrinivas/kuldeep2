@@ -111,6 +111,15 @@ sqlMacros:
     - macros/generate_schema_name.sql
     - .prophecy/ide/macros/generate_schema_name.json
     createdAt: '2025-03-21 07:40:26'
+  .prophecy/metadata/sqlmacros/prophecy_tmp_source:
+    name: prophecy_tmp_source
+    macroType: expression
+    description: null
+    author: prakharmartand@prophecy.io
+    files:
+    - macros/prophecy_tmp_source.sql
+    - .prophecy/ide/macros/prophecy_tmp_source.json
+    createdAt: '2025-12-01 10:45:44'
 sqlSeeds:
   .prophecy/metadata/sqlseeds/raw_test2:
     name: raw_test2
@@ -589,14 +598,6 @@ sqlSources:
       author: sony@prophecy.io
       createdAt: '2025-05-28 03:59:42'
       tableType: table
-  .prophecy/metadata/sqlsources/prophecy_tmp_source__amk:
-    name: prophecy_tmp_source__amk
-    description: null
-    author: sony@prophecy.io
-    files:
-    - models/amk/schema.yml
-    createdAt: '2025-06-19 11:00:22'
-    tables: []
   .prophecy/metadata/sqlsources/qa_team_qa_database:
     name: qa_team.qa_database
     description: null
@@ -748,6 +749,7 @@ projectDependencies: {}
 flags:
   shouldAddDefaultDependenciesIfAbsent: false
 pipelineConfigurations: {}
+projectConfigurations: {}
 sqlOrchestratorPipelines:
   .prophecy/metadata/sqlorchestratorpipeline/latlog:
     name: latlog
@@ -809,9 +811,9 @@ sqlOrchestratorPipelines:
     author: sony@prophecy.io
     files:
     - models/amk/schema.yml
-    - models/amk/model_amk_Reformat_1.sql
     - .prophecy/ide/pipelines/amk.json
     - pipelines/amk.py
+    - models/amk/amk__Reformat_1.sql
     createdAt: '2025-06-19 08:26:31'
   .prophecy/metadata/sqlorchestratorpipeline/DO_NOT_USE_OR_YOU_WILL_BE_FIRED:
     name: DO_NOT_USE_OR_YOU_WILL_BE_FIRED

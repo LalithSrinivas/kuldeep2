@@ -7,9 +7,5 @@ with DAG(Schedule = Schedule):
         writeOptions = {"writeMode" : "overwrite"}, 
         table = {"name" : "map", "sourceType" : "Seed", "alias" : ""}
     )
-    model_amk_Reformat_1 = Task(
-        task_id = "model_amk_Reformat_1", 
-        component = "Model", 
-        modelName = "model_amk_Reformat_1"
-    )
-    map.out >> model_amk_Reformat_1.in_0
+    amk__Reformat_1 = Task(task_id = "amk__Reformat_1", component = "Model", modelName = "amk__Reformat_1")
+    map.out >> amk__Reformat_1.in_0
